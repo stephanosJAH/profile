@@ -5,10 +5,9 @@ export default function SoftSkill() {
   return (
     <div className='grid grid-cols-4 '>
       {softSkill.map((skill) => (
-        // <IconTech key={skill.name} data={skill} />
         <div
           key={skill.name}
-          className='flex justify-center items-center py-8 px-6 rounded hover:bg-slate-900'
+          className='flex justify-center items-center py-8 px-6 rounded hover:bg-sky-400 hover:text-white transition duration-150'
         >
           <p className='text-base text-center'>{skill.name}</p>
         </div>

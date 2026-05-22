@@ -1,6 +1,10 @@
 import { Sparkles } from '../ui/Icons';
 
-export default function TableBackend() {
+type Props = {
+  subtitle: string;
+}
+
+export default function TableBackend( { subtitle }: Props ) {
   return (
     <div className='card__back bg-[#10151d] w-full h-96 p-4'>
       <div className='p-4'>
@@ -10,7 +14,7 @@ export default function TableBackend() {
               <b>Backend</b>
             </h1>
             <span>|</span>
-            <h2 className='flex items-center'>technologies, frameworks & libraries</h2>
+            <h2 className='flex items-center'>{subtitle}</h2>
           </div>
           <Sparkles />
         </div>

@@ -1,11 +1,15 @@
 import TableBackend from './TableBackend';
 import TableFrontend from './TableFrontend';
 
-export default function CardSkill() {
+type Props = {
+  subtitle: string;
+};
+
+export default function CardSkill( { subtitle }: Props ) {
   return (
     <div className='card relative w-full h-[32rem]'>
-      <TableFrontend />
-      <TableBackend />
+      <TableFrontend subtitle={subtitle} />
+      <TableBackend subtitle={subtitle} />
     </div>
   );
 }

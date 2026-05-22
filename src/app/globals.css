@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 :root {
+  --color-primary: #00c1e8;
   --border-front: #e3e3e3;
 }
 
@@ -25,7 +26,47 @@ body {
   background-image: url('../../public/images/bgme.png');
 }
 
+.link-h-l {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.greeting {
+  transition: transform 0.3s ease-in-out;
+  position: absolute;
+  z-index: 2;
+}
+
+.linkabout {
+  transition: opacity 0.3s ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index:1;
+  color: #00c1e8;
+}
+
+.link-h-l:hover .greeting {
+  animation: fallBack 0.5s forwards;
+}
+
+.link-h-l:hover .linkabout {
+  opacity: 1;
+}
+
+@keyframes fallBack {
+  0% {
+    transform: translateY(0) rotateX(0);
+  }
+  100% {
+    transform: rotateX(90deg);
+  }
+}
+
 .letter-intro {
+  /* display: none; */
   position: relative;
   animation: fall 0.8s ease forwards;
   margin-top: -2000px;
@@ -115,7 +156,6 @@ body {
 }
 
 .letter-logo:hover {
-  transform: translateY(-8px);
   color: #00d6ff;
 }
 
@@ -376,4 +416,50 @@ body {
   100% {
     transform: translateY(0%);
   }
+}
+
+/* Webkit scrollbar styles */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #00c1e8;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0096b8;
+}
+
+/* Standard scrollbar styles */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #00c1e8 #1a1a1a;
+}
+
+
+.experience-title{
+  view-timeline-name: 'experience-title'
+}
+
+
+
+::view-transition-group(figure-caption) {
+  height: auto;
+  right: 0;
+  left: auto;
+  transform-origin: right center;
+}
+
+::view-transition-old(figure-caption) {
+  animation: 0.25s linear both shrink-x;
+}
+
+::view-transition-new(figure-caption) {
+  animation: 0.25s 0.25s linear both grow-x;
 }

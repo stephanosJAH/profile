@@ -4,7 +4,11 @@ import { Sparkles } from '@/components/ui/Icons';
 import { frontendTech } from '@/libs/data';
 import Waves from './Waves';
 
-export default function TableFrontend() {
+type Props = {
+  subtitle: string;
+}
+
+export default function TableFrontend( { subtitle }: Props ) {
   return (
     <div className='card__front rounded-md w-full relative overflow-hidden text-white'>
       <div className='p-4'>
@@ -14,7 +18,7 @@ export default function TableFrontend() {
               <b>Frontend</b>
             </h1>
             <span>|</span>
-            <h2 className='flex items-center'>technologies, frameworks & libraries</h2>
+            <h2 className='flex items-center'>{subtitle}</h2>
           </div>
           <Sparkles />
         </div>

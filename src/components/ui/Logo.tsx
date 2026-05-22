@@ -1,8 +1,8 @@
 export default function Logo() {
   return (
     <div className='flex justify-start items-center'>
-      <p>/</p>
-      <p className='letter-logo'>e</p>
+      <p className="letter-logo">/</p>
+      <p className='ml-1 letter-logo'>e</p>
       <p className='letter-logo'>s</p>
       <p className='letter-logo'>t</p>
       <p className='letter-logo'>e</p>
