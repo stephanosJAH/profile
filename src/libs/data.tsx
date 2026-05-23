@@ -21,11 +21,6 @@ import {
   LaravelBlade,
 } from '@/components/ui/Icons';
 
-import { link } from 'fs';
-import { comment } from 'postcss';
-import { title } from 'process';
-import { text } from 'stream/consumers';
-
 /**
  * Represents an array of frontend technologies.
  */

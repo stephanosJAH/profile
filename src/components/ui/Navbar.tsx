@@ -1,11 +1,8 @@
-"use client";
-
-import Logo from './Logo';
-import { useRouter } from 'next/navigation';
+import Logo from './Logo'
+import { useNavigate } from 'react-router-dom'
 
 export default function Navbar() {
-
-  const router = useRouter();
+  const navigate = useNavigate()
 
   return (
     <nav className='mt-[5%] w-full border-gray-200 dark:bg-gray-900'>
@@ -16,14 +13,14 @@ export default function Navbar() {
           </span>
         </a>
         <div className='hidden w-full md:block md:w-auto text-white hover:text-sky-400 hover:font-bold' id='navbar-default'>
-          <button 
+          <button
             className='btn btn-primary'
-            onClick={() => router.back()}
+            onClick={() => navigate(-1)}
           >
             Back
           </button>
         </div>
       </div>
     </nav>
-  );
+  )
 }

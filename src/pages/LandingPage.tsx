@@ -1,12 +1,7 @@
-import { Link } from 'next-view-transitions'
 import LinkMain from '@/components/ui/LinkMain'
+import { main } from '@/libs/data'
 
-import { main } from '@/libs/data';
-// import Link from 'next/link';
-
-
-
-export default function Home() {
+export default function LandingPage() {
   return (
     <main className='flex min-h-screen justify-between bg-black'>
       <div className='absolute z-10 w-auto h-full ml-40 flex items-center justify-center'>
@@ -23,8 +18,8 @@ export default function Home() {
         </div>
       </div>
       <div className='z-0 w-full min-h-screen flex justify-end'>
-        <div className='min-h-screen w-[60%] bg-[url("../../public/images/bgme.png")] bg-center bg-cover bg-no-repeat'></div>
+        <div className='min-h-screen w-[60%] bg-[url("/images/bgme.png")] bg-center bg-cover bg-no-repeat'></div>
       </div>
     </main>
-  );
+  )
 }

@@ -1,24 +1,15 @@
-"use client"
+import { SendMailPack } from '@/components/ui/Icons'
+import Footer from '@/components/ui/Footer'
+import { contact } from '@/libs/data'
 
-import { SendMailPack } from "@/components/ui/Icons";
-
-import Footer from "@/components/ui/Footer";
-
-import { contact } from "@/libs/data";
-import Label from "@/components/ui/Label";
-
-export default function Page() {
-
-  // formaluário de contacto
-
+export default function ContactPage() {
   const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Handle form submission
-  };
+    e.preventDefault()
+  }
 
   return (
     <article className='text-gray-500 mx-auto w-full max-w-2xl format format-sm sm:format-base lg:format-lg format-blue dark:format-invert my-24'>
-      
+
       <h1 style={{viewTransitionName: 'experience-title'}}
                 className='text-sky-400 text-6xl font-bold mb-10'> {contact.title} </h1>
 
@@ -64,7 +55,6 @@ export default function Page() {
       </form>
 
       <Footer />
-
     </article>
   )
 }

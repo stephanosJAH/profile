@@ -7,23 +7,12 @@
   --border-front: #e3e3e3;
 }
 
-/*
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+body {
+  font-family: 'Inter', sans-serif;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb)))
-    rgb(var(--background-start-rgb));
-} */
-
 .bg-photo {
-  background-image: url('../../public/images/bgme.png');
+  background-image: url('/images/bgme.png');
 }
 
 .link-h-l {
@@ -335,9 +324,7 @@ body {
 .water {
   width: 100%;
   height: 100%;
-  /* margin-top: 25px; */
   position: relative;
-  /* animation: water-up 1s cubic-bezier(0.25, 0.1, 0.49, 1.17); */
 }
 
 .span-wave {
@@ -348,7 +335,7 @@ body {
 .wave-1 {
   position: absolute;
   z-index: 1;
-  background: url('./../../public/wave.svg');
+  background: url('/wave.svg');
   height: 50px;
   background-size: contain;
   animation: wave-r 60s linear infinite;
@@ -356,14 +343,14 @@ body {
 
 .wave-2 {
   position: absolute;
-  background: url('./../../public/wave_2.svg');
+  background: url('/wave_2.svg');
   height: 50px;
   background-size: contain;
   animation: wave-l 55s linear infinite;
 }
 
 .wave-3 {
-  background: url('./../../public/wave_3.svg');
+  background: url('/wave_3.svg');
   height: 50px;
   background-size: contain;
   animation: wave-b 45s linear infinite;

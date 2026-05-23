@@ -1,4 +1,4 @@
-import { Link } from 'next-view-transitions'
+import TransitionLink from './TransitionLink'
 
 interface Props {
     data: {
@@ -11,7 +11,7 @@ interface Props {
 
 export default function LinkMain({ data }: Props ) {
     return (
-    <Link href={data._href} className='link-h-l py-6 px-3'>
+    <TransitionLink href={data._href} className='link-h-l py-6 px-3'>
         <div className='greeting flex justify-start items-center'>
             {data.title.split('').map((letter, index) => (
                 <p key={index} className='letter-intro'>{letter}</p>
@@ -21,6 +21,6 @@ export default function LinkMain({ data }: Props ) {
             style={{viewTransitionName: data.transitionName}}>
               {data.secondTitle}
         </div>
-      </Link>
+      </TransitionLink>
     );
 }
