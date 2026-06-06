@@ -1,25 +1,22 @@
 import { useNavigate } from 'react-router-dom'
 import { useCallback } from 'react'
+import { flushSync } from 'react-dom'
 
 export function useViewTransitionRouter() {
   const navigate = useNavigate()
 
   const transitionalNavigate = useCallback(
     (to: string | number) => {
-      if (typeof to === 'number') {
-        if (document.startViewTransition) {
-          document.startViewTransition(() => navigate(to))
-        } else {
-          navigate(to)
-        }
+      if (!document.startViewTransition) {
+        navigate(to as any)
         return
       }
 
-      if (document.startViewTransition) {
-        document.startViewTransition(() => navigate(to))
-      } else {
-        navigate(to)
-      }
+      document.startViewTransition(() => {
+        flushSync(() => {
+          navigate(to as any)
+        })
+      })
     },
     [navigate]
   )

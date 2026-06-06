@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find \"C:\\\\Users\\\\Admin\\\\Documents\\\\ampiUP\\\\projects\\\\profile\" -maxdepth 1 -type f | grep -E \"\\\\.\\(json|js|ts|css\\)$\" | sort)",
+      "Bash(grep -r \"Server\\\\|Client\\\\|getServerSideProps\\\\|getStaticProps\\\\|getInitialProps\\\\|revalidate\\\\|cache\\\\|fetch\" /c/Users/Admin/Documents/ampiUP/projects/profile/src --include=\"*.tsx\" --include=\"*.ts\" 2>/dev/null | head -30)",
+      "Bash(find /c/Users/Admin/Documents/ampiUP/projects/profile/src/components -name \"*.tsx\" | xargs wc -l | tail -1)",
+      "Bash(ls C:/Users/Admin/Documents/ampiUP/projects/profile/.eslintrc* 2>/dev/null; ls C:/Users/Admin/Documents/ampiUP/projects/profile/postcss.config* 2>/dev/null; ls C:/Users/Admin/Documents/ampiUP/projects/profile/public/ 2>/dev/null)",
+      "Bash(cd C:/Users/Admin/Documents/ampiUP/projects/profile && rm -rf node_modules package-lock.json && npm install 2>&1)",
+      "Bash(cd C:/Users/Admin/Documents/ampiUP/projects/profile && npx tsc --noEmit 2>&1)",
+      "Bash(cd C:/Users/Admin/Documents/ampiUP/projects/profile && npx vite build 2>&1)",
+      "Bash(find C:/Users/Admin/Documents/ampiUP/projects/profile/src -name \"App.tsx\" -o -name \"*router*\" -o -name \"*Router*\" -o -name \"*route*\" -o -name \"*Route*\" 2>/dev/null | head -20)"
+    ]
+  }
+}

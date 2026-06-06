@@ -11,6 +11,9 @@
 /dist
 /build
 
+# next.js (legacy build artifacts)
+/.next
+
 # misc
 .DS_Store
 *.pem
