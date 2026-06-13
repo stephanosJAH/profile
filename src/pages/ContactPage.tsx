@@ -51,10 +51,10 @@ export default function ContactPage() {
   }
 
   return (
-    <article className='text-gray-500 mx-auto w-full max-w-2xl px-4 sm:px-0 format format-sm sm:format-base lg:format-lg format-blue dark:format-invert my-12 sm:my-24'>
+    <article className='text-gray-400 mx-auto w-full max-w-2xl px-4 sm:px-0 format format-sm sm:format-base lg:format-lg format-blue dark:format-invert my-12 sm:my-24'>
 
       <h1 style={{viewTransitionName: 'experience-title'}}
-                className='text-sky-400 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 sm:mb-10 break-words'> {contact.title} </h1>
+                className='font-display text-sky-400 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 sm:mb-10 break-words'> {contact.title} </h1>
 
       <p className='text-base sm:text-lg font-light mb-6 sm:mb-10'>
         { contact.description }
@@ -67,7 +67,7 @@ export default function ContactPage() {
             type="text"
             id="name"
             name="name"
-            className="w-full border rounded-md border-sky-500 p-2 bg-transparent focus-visible:border-sky-400"
+            className="w-full border rounded-md border-sky-500 p-2 bg-transparent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-400"
             required
           />
         </div>
@@ -77,7 +77,7 @@ export default function ContactPage() {
             type="email"
             id="email"
             name="email"
-            className="w-full border rounded-md border-sky-500 p-2 bg-transparent"
+            className="w-full border rounded-md border-sky-500 p-2 bg-transparent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-400"
             required
           />
         </div>
@@ -87,14 +87,14 @@ export default function ContactPage() {
             id="message"
             name="message"
             rows={4}
-            className="w-full border rounded-md border-sky-500 p-2 bg-transparent"
+            className="w-full border rounded-md border-sky-500 p-2 bg-transparent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-400"
             required
           />
         </div>
         <button
           type="submit"
           disabled={status === 'sending'}
-          className="w-full hover:bg-blue-400 text-white font-bold py-2 px-4 rounded flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
+          className="w-full hover:bg-blue-400 text-white font-bold py-2 px-4 rounded flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-400"
         >
           <SendMailPack />
           { status === 'sending' ? 'Enviando...' : contact.from.button }

@@ -8,7 +8,30 @@
       "Bash(cd C:/Users/Admin/Documents/ampiUP/projects/profile && rm -rf node_modules package-lock.json && npm install 2>&1)",
       "Bash(cd C:/Users/Admin/Documents/ampiUP/projects/profile && npx tsc --noEmit 2>&1)",
       "Bash(cd C:/Users/Admin/Documents/ampiUP/projects/profile && npx vite build 2>&1)",
-      "Bash(find C:/Users/Admin/Documents/ampiUP/projects/profile/src -name \"App.tsx\" -o -name \"*router*\" -o -name \"*Router*\" -o -name \"*route*\" -o -name \"*Route*\" 2>/dev/null | head -20)"
+      "Bash(find C:/Users/Admin/Documents/ampiUP/projects/profile/src -name \"App.tsx\" -o -name \"*router*\" -o -name \"*Router*\" -o -name \"*route*\" -o -name \"*Route*\" 2>/dev/null | head -20)",
+      "Bash(git commit --amend -m 'feat: diseño responsive, formulario de contacto y mejoras de UI' -m '- Hace responsive las páginas \\(Jumbotron, Navbar, MainLayout, Contact, Experiences, Landing, Me\\) con breakpoints sm/md/lg *)",
+      "Bash(git push *)",
+      "Bash(npx tsc *)",
+      "Bash(echo \"exit: $?\")",
+      "Bash(netstat -ano)",
+      "Bash(curl -s http://localhost:5173 -o /dev/null -w \"%{http_code}\\\\n\")",
+      "Bash(ls \"/c/Program Files \\(x86\\)/Microsoft/Edge/Application/\" 2>/dev/null | head -5; ls \"/c/Program Files/Google/Chrome/Application/\" 2>/dev/null | head -5)",
+      "Read(//c/Program Files \\(x86\\)/Microsoft/Edge/Application//**)",
+      "Read(//c/Program Files/Google/Chrome/**)",
+      "Bash(mkdir -p /tmp/shots)",
+      "Bash(\"/c/Program Files \\(x86\\)/Microsoft/Edge/Application/msedge.exe\" --headless=new --disable-gpu --window-size=1440,900 --screenshot=/tmp/shots/landing.png http://localhost:5173/)",
+      "Read(//tmp/**)",
+      "Bash(\"/c/Program Files \\(x86\\)/Microsoft/Edge/Application/msedge.exe\" --headless=new --disable-gpu --window-size=1440,2200 --screenshot=me.png http://localhost:5173/me)",
+      "Bash(\"/c/Program Files \\(x86\\)/Microsoft/Edge/Application/msedge.exe\" --headless=new --disable-gpu --window-size=1440,1800 --screenshot=experiences.png http://localhost:5173/experiences)",
+      "Bash(\"/c/Program Files \\(x86\\)/Microsoft/Edge/Application/msedge.exe\" --headless=new --disable-gpu --window-size=1440,1200 --screenshot=contact.png http://localhost:5173/contact)",
+      "Bash(\"/c/Program Files \\(x86\\)/Microsoft/Edge/Application/msedge.exe\" --headless=new --disable-gpu --window-size=420,900 --screenshot=landing_mobile.png http://localhost:5173/)",
+      "Bash('/c/Program Files \\(x86\\)/Microsoft/Edge/Application/msedge.exe' --headless=new --disable-gpu --window-size=1440,2200 --virtual-time-budget=4000 --user-data-dir=/tmp/edge2 --screenshot=/tmp/shots/me.png http://localhost:5173/me)",
+      "Bash(echo \"exit $?\")",
+      "Bash(tasklist)",
+      "Bash(wmic process *)",
+      "Bash(cygpath -w /tmp/shots/landing.png)",
+      "Bash(wslpath -w /tmp/shots/landing.png)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:5180/experiences)"
     ]
   }
 }

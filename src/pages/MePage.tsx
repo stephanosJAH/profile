@@ -10,7 +10,7 @@ import { about_me } from '@/libs/data'
 
 export default function MePage() {
   return (
-    <article className='mt-[5%] text-gray-500 mx-auto w-full max-w-2xl px-4 sm:px-0 format format-sm sm:format-base lg:format-lg format-blue dark:format-invert'>
+    <article className='mt-[5%] text-gray-400 mx-auto w-full max-w-2xl px-4 sm:px-0 format format-sm sm:format-base lg:format-lg format-blue dark:format-invert'>
 
       <Jumbotron data={about_me.jumbotron} />
 
@@ -41,7 +41,7 @@ export default function MePage() {
             <a
               href='/pdf/CV Esteban Isaias Campos (es).pdf'
               download='CV Esteban Isaias Campos (es).pdf'
-              className='flex items-center justify-center gap-2'
+              className='flex items-center justify-center gap-2 rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-400'
               title='Download CV Esteban Isaias Campos (es).pdf'
             >
               <Download className='w-6 h-6 mr-2' />
@@ -52,7 +52,7 @@ export default function MePage() {
             <a
               href='/pdf/CV Esteban Isaias Campos (en).pdf'
               download='CV Esteban Isaias Campos (en).pdf'
-              className='flex items-center justify-center gap-2'
+              className='flex items-center justify-center gap-2 rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-400'
               title='Download CV Esteban Isaias Campos (en).pdf'
             >
               <Download className='w-6 h-6 mr-2' />

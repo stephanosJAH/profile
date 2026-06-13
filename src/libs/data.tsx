@@ -201,8 +201,12 @@ export const experiences = {
       text: 'principales'
     },
     {
+      text: 'proyectos personales'
+    },
+    {
       text: 'otras'
-    }
+    },
+
   ],
 }
 
@@ -222,7 +226,8 @@ export const main_experiences = [
     href: 'sofse',
     component: 'Sofse',
     role: 'Fullstack Developer',
-    tags: ['transport', 'backend', 'frontend', 'mobile'],
+    tags: ['transporte', 'analista', 'arquitecto', 'php', 'laravel', 'database'],
+    tag_filters: ['trasporte', 'analista', 'arquitecto', 'php', 'laravel', 'database', 'javascript', 'jquery', 'postgresql', 'codeigniter', 'bootstrap', 'vue', 'vuetify', 'react', 'redux', 'nodejs', 'express'],
     aptitudes : [
         { title: "Relevamiento de Requerimientos", description: "Colaboración con stakeholders clave para identificar, analizar y documentar requisitos funcionales y técnicos, garantizando la alineación con los objetivos del negocio." },
         { title: "Diseño de Base de Datos", description: "Estructuración y optimización de bases de datos, asegurando rendimiento y escalabilidad." },
@@ -265,6 +270,7 @@ export const main_experiences = [
     component: 'AirSinacol',
     role: 'Fullstack Developer',
     tags: ['php', 'laravel', 'jquery', 'postgresql'],
+    tag_filters: ['php', 'laravel', 'jquery', 'postgresql'],
     aptitudes : [
         { title: "Desarrollo Fullstack", description: "Implementación integral de aplicaciones, tanto en el frontend como en el backend." },
         { title: "Diseño de Base de Datos", description: "Estructuración y optimización de bases de datos, asegurando rendimiento y escalabilidad." },
@@ -292,6 +298,7 @@ export const main_experiences = [
     component: 'Agree',
     role: 'Backend engineer',
     tags: ['fintech', 'agro', 'backend', 'python', 'fastapi', 'microservices'],
+    tag_filters: ['fintech', 'agro', 'backend', 'python', 'fastapi', 'microservices', 'linux', 'postgresql', 'docker'],
     aptitudes : [
         { title: "Diseño de Base de Datos", description: "Estructuración y optimización de bases de datos, asegurando rendimiento y escalabilidad." },
         { title: "Desarrollo Backend", description: "Implementación de servicios y aplicaciones backend. Aplicacion de test unitarios y de integración para garantizar la calidad del software." },
@@ -319,10 +326,11 @@ export const main_experiences = [
       name: 'Accenture',
     },
     tags: ['cobol', 'mainframe', 'telefonica', 'testing'],
+    tag_filters: ['cobol', 'mainframe', 'telefonica', 'testing', 'jcl', 'rexx'],
     aptitudes : [
         { title: "Tester Ssr", description: "Ejecución de pruebas de software, identificación de defectos y seguimiento de su resolución." },
-        { title: " Ejecucion de jobs en JCL y schedules", description: "Ejecución de jobs en JCL y schedules, seguimiento de procesos batch y monitoreo de sistemas." },
-        { title: "Desarrollo de pequeñas herramientas para uso interso", description: "Desarrollo de pequeñas herramientas para uso interno, automatización de tareas" },
+        { title: "Seguimiento de jobs en JCL y schedules", description: "Ejecución de jobs en JCL y schedules, seguimiento de procesos batch y monitoreo de sistemas." },
+        { title: "Desarrollo de pequeñas herramientas para uso interso", description: "Desarrollo herramientas automatización de tareas, en JCL y REXX. Uso interno." },
     ],
     apps: [
       {
@@ -340,17 +348,58 @@ export const minor_experiences = [
     name: 'Lemmonet',
     role: 'Fullstack Developer',
     tags: ['marketing', 'php', 'angular'],
-  }, 
+    tag_filters: ['marketing', 'php', 'angular'],
+  },
   {
     name: 'BDT - Solutions',
     role: 'Fullstack Developer Jr',
     tags: ['node.js', 'express'],
+    tag_filters: ['node.js', 'express'],
   },
   {
     name: 'ASAP Consulting',
     role: 'Tester Analyst',
     tags: ['calidad', 'testing'],
+    tag_filters: ['calidad', 'testing'],
   }
+]
+
+export const personal_project = [
+  {
+    name: 'Ampiup',
+    full_name: 'Ampiup',
+    full_subname: 'Desarrollo potenciado con IA',
+    description: 'AMPIUP es una empresa de software, apuntada al apoyo de pequeñas, medianas empresa y profecionales en la automatizacion y digitalizacion de sus negocios.',
+    link: {
+      link: 'https://www.ampiup.com', //'https://www.sofse.gob.ar/',
+      name: 'ampiUP software inteligente',
+    },
+    href: 'ampiup',
+    component: 'Ampiup',
+    role: 'Founder',
+    tags: ['software', 'inteligencia artificial', 'consultoria'],
+    tag_filters: ['software', 'inteligencia artificial', 'consultoria', 'php', 'javascript', 'jquery', 'postgresql', 'codeigniter', 'bootstrap', 'laravel', 'vue', 'vuetify', 'react', 'redux', 'nodejs', 'express'],
+    aptitudes : [
+      { title: "Relevamiento de Requerimientos", description: "Colaboración con stakeholders clave para identificar, analizar y documentar requisitos funcionales y técnicos, garantizando la alineación con los objetivos del negocio." },
+    ],
+    apps: [
+      {
+        name: 'SIMAF (Sistema de Mantenimiento Ferroviario)',
+        description: 'Participación activa en el desarrollo del sistema, optimizando la gestión del mantenimiento ferroviario a nivel organizacional. Analisis de requerimientos, diseño e implementacion de nuevas caracteristicas.',
+        tech: ['php', 'javascript', 'jquery', 'postgresql', 'codeigniter', 'bootstrap'],
+      },
+      {
+        name: 'MAF (Sistema Maestro Ferroviario)',
+        description: 'Liderazgo técnico y desarrollo de esta plataforma clave para la gestión centralizada de la operación ferroviaria.',
+        tech: ['php', 'laravel', 'javascript', 'vue', 'postgresql', 'vuetify'],
+      },
+      {
+        name: 'Reservá tu lugar en el tren',
+        description: 'Desarrollo de la aplicación utilizada a nivel nacional por los usuarios del servicio ferroviario del AMBA y actualmente extendida a trenes regionales.',
+        tech: ['javascript', 'react', 'redux', 'nodejs', 'express', 'postgresql'],
+      },
+    ],
+  },
 ]
 
 export const about_me = {
@@ -358,7 +407,7 @@ export const about_me = {
     greeting: 'Hola! Soy',
     name: 'Esteban Isaias Campos',
     // description: 'I fullstack developer with over 9 years of experience in the IT industry. I am curious, proactive individual who adapts easily. I like animations and desing.',
-    description: 'Desarrollador fullstack con más de 9 años de experiencia en la industria de IT. Soy una persona curiosa, proactiva y que se adapta fácilmente. Me gusta trabajar en equipo y aprender nuevas tecnologías. Me encanta el diseño y las animaciones.',
+    description: 'Desarrollador fullstack con más de 10 años de experiencia en la industria de IT. Soy una persona curiosa, proactiva y que se adapta fácilmente. Me gusta trabajar en equipo y aprender nuevas tecnologías.',
   },
   labels:[
     {

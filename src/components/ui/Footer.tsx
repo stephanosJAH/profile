@@ -6,7 +6,7 @@ export default function Footer() {
     <footer className='mt-32'>
       <div className='flex flex-col items-center justify-center gap-2'>
         <div className='flex items-center justify-center gap-2'>
-          Esteban Isaias Campos whit
+          Esteban Isaias Campos with
           <HeartCode className='text-red-400 icon-tabler-heart-code' />
         </div>
         <ListContact />

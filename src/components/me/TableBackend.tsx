@@ -18,7 +18,7 @@ export default function TableBackend( { subtitle }: Props ) {
           </div>
           <Sparkles />
         </div>
-        <div className='console w-full h-full overflow-y-auto bg-[#06090d] text-white p-4'>
+        <div className='console font-mono w-full h-full overflow-y-auto bg-[#06090d] text-white p-4'>
           <div className='flex'>
             <p className='text-[#00ff00] mr-2'> stephanos@profile-backend </p>
             <p className='text-[#00ff00] mr-2'> ~/about/me/skill/backend </p>

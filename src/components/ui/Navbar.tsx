@@ -14,14 +14,16 @@ export default function Navbar() {
         </a>
         <div className='block w-auto text-white' id='navbar-default'>
           <button
-            className='self-center text-lg sm:text-xl md:text-2xl font-semibold whitespace-nowrap text-white'
+            className='self-center text-lg sm:text-xl md:text-2xl font-semibold whitespace-nowrap text-white rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-400'
             onClick={() => navigate(-1)}
           >
             <div className='flex justify-start items-center'>
-              <p className='letter-logo'>b</p>
-              <p className='letter-logo'>a</p>
-              <p className='letter-logo'>c</p>
-              <p className='letter-logo'>k</p>
+              <p className='letter-logo'>v</p>
+              <p className='letter-logo'>o</p>
+              <p className='letter-logo'>l</p>
+              <p className='letter-logo'>v</p>
+              <p className='letter-logo'>e</p>
+              <p className='letter-logo'>r</p>
             </div>
           </button>
         </div>

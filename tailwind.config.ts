@@ -7,6 +7,11 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['"Hanken Grotesk"', 'sans-serif'],
+        display: ['Unbounded', 'sans-serif'],
+        mono: ['"JetBrains Mono"', 'monospace'],
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':

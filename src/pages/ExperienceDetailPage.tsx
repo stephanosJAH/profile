@@ -26,7 +26,7 @@ export default function ExperienceDetailPage() {
   }
 
   return (
-    <div className='mt-[5%] flex flex-col gap-3 text-gray-500 mx-auto w-full max-w-3xl format format-sm sm:format-base lg:format-lg format-blue dark:format-invert'>
+    <div className='mt-[5%] flex flex-col gap-3 text-gray-400 mx-auto w-full max-w-3xl format format-sm sm:format-base lg:format-lg format-blue dark:format-invert'>
       <h1
         className='text-sky-400 text-6xl font-bold'
         style={{viewTransitionName: `experience-${slug}`}}
